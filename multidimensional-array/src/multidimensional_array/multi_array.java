@@ -4,6 +4,8 @@ public class multi_array {
 	
 	
 	public static void main(String args[]) {
+		
+
 	Scanner input=new Scanner(System.in);
 	System.out.print("insert the number of rows: ");
 	int row=input.nextInt();
@@ -15,7 +17,7 @@ public class multi_array {
 	int array1[][]=new int[row][column];
 	randomization.rando(array1);
 	Display.display(array1);
-		
+	boolean x=false;
 	System.out.println("guess a position:");
 	
 	System.out.print("row: ");

@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class guessing {
 
 	static Scanner test1=new Scanner(System.in);
-	public static void test(int num1, int num2) {
+	public static void test (int num1, int num2) {
 		boolean accepted=false;
+		
 
 		while (accepted==false) {
 			if (num1>num2) {
@@ -16,7 +17,9 @@ public class guessing {
 			}
 			else {
 				accepted=true;
+				
 			}
+		
 		}
 		
 		}
