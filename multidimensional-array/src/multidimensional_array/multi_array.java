@@ -17,16 +17,46 @@ public class multi_array {
 	int array1[][]=new int[row][column];
 	randomization.rando(array1);
 	Display.display(array1);
-	boolean x=false;
+	
 	System.out.println("guess a position:");
 	
 	System.out.print("row: ");
 	int row_guessing=input.nextInt();
-	guessing.test(row_guessing, row-1);
+	//=============================================================
+		boolean accepted_r=false;
+	
+
+	while (accepted_r==false) {
+		if (row_guessing>(row-1)) {
+			System.out.println("you should give an integer number between 0 and "+(row-1));
+			System.out.println("give a new value for please:");
+			row_guessing=input.nextInt();
+		}
+		else {
+			accepted_r=true;
+			
+		}
+	//=============================================================
+	//guessing.test(row_guessing, row-1);
 
 	System.out.print("column: ");
 	int column_guessing=input.nextInt();
-	guessing.test(column_guessing, column-1);
+	//=============================================================
+			boolean accepted_c=false;
+		
+
+		while (accepted_c==false) {
+			if (column_guessing>(column-1)) {
+				System.out.println("you should give an integer number between 0 and "+(column-1));
+				System.out.println("give a new value for please:");
+				column_guessing=input.nextInt();
+			}
+			else {
+				accepted_c=true;
+				
+			}
+		//=============================================================
+	//guessing.test(column_guessing, column-1);
 	
 	
 	System.out.println("you have choosen the position ["+row_guessing+","+column_guessing+"]");
@@ -34,6 +64,8 @@ public class multi_array {
 	Check_position.check(array1, row_guessing, column_guessing);
 	
 	}
+}
+}
 }
 
 
