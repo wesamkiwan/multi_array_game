@@ -9,6 +9,7 @@ public class multi_array {
 	Scanner input=new Scanner(System.in);
 	System.out.print("insert the number of rows: ");
 	int row=input.nextInt();
+	
 	System.out.print("insert the number of columns: ");
 	int column=input.nextInt();
 	System.out.println("================================");
@@ -24,7 +25,7 @@ public class multi_array {
 	int row_guessing=input.nextInt();
 	//=============================================================
 		boolean accepted_r=false;
-	
+		
 
 	while (accepted_r==false) {
 		if (row_guessing>(row-1)) {

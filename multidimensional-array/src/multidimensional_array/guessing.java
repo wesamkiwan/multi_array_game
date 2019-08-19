@@ -2,6 +2,9 @@ package multidimensional_array;
 
 import java.util.Scanner;
 
+
+// this class is no more in use.
+// it's been included in the main class in multi_array.java
 public class guessing {
 
 	static Scanner test1=new Scanner(System.in);
