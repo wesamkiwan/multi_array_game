@@ -8,8 +8,18 @@ public class Display {
 			System.out.print(myArray[i][j]+ " ");
 			}
 			System.out.println(" ");
-
+			}
 		}
+		
+		public static void displaystr(String[][] myArray) {
+			for (int i=0;i<myArray.length;i++) {
+				for (int j=0;j<myArray[i].length;j++) {
+					myArray[i][j]="[]";
+				System.out.print(myArray[i][j]+ " ");
+				}
+				System.out.println(" ");
+
+			}	
 		}
 
 
